@@ -1,0 +1,41 @@
+/* SINCO ABR — Global base & reset
+   Lifted from the app's index.css: Roboto everywhere, zeroed margins,
+   the custom 8px scrollbar, and the legacy terracotta focus ring. */
+* {
+  font-family: var(--abr-font-body);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--abr-text-body);
+  background-color: var(--abr-surface-app);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Custom scrollbar (8px, grey thumb on light track) */
+::-webkit-scrollbar { width: 8px; height: 8px; background-color: var(--abr-scrollbar-track); }
+::-webkit-scrollbar-track { border-radius: var(--abr-radius-scroll); background-color: var(--abr-scrollbar-track); }
+::-webkit-scrollbar-thumb { border-radius: var(--abr-radius-scroll); background-color: var(--abr-scrollbar-thumb); }
+
+/* Legacy form focus (terracotta) — kept for parity with index.css */
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 3px rgb(173 91 64 / 50%) !important;
+  border-color: var(--abr-brand-terracotta) !important;
+}
+
+/* Report table treatment (.tablaInforme) */
+.tablaInforme {
+  border: solid 1px var(--abr-table-border) !important;
+  border-radius: var(--abr-radius-card) !important;
+  border-collapse: separate !important;
+  border-spacing: 0;
+  color: var(--abr-table-text) !important;
+}
+.tablaInforme td {
+  border-top: solid 1px var(--abr-table-border) !important;
+  font-size: 14px;
+}

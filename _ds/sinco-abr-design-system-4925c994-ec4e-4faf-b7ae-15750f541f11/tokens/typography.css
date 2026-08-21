@@ -1,0 +1,85 @@
+/* SINCO ABR — Typography tokens
+   Body family: Roboto · Heading family: Nunito (h1–h6)
+   Scale mirrors TemaBase.ts MUI typography variants.
+   The app runs at a compact density: base body text is 13–15px. */
+:root {
+  /* ── Families ───────────────────────────────────────────── */
+  --abr-font-body: 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --abr-font-heading: 'Nunito', 'Roboto', system-ui, sans-serif;
+
+  /* ── Weights ────────────────────────────────────────────── */
+  --abr-fw-light: 300;       /* @kind font */
+  --abr-fw-regular: 400;     /* @kind font */
+  --abr-fw-medium: 500;      /* @kind font */
+  --abr-fw-semibold: 600;    /* @kind font */
+  --abr-fw-bold: 700;        /* @kind font */
+
+  /* ── Heading sizes (Nunito) ─────────────────────────────── */
+  --abr-h1-size: 40px;
+  --abr-h1-weight: 300;
+  --abr-h1-lh: 1.4;     /* @kind other */
+  --abr-h1-ls: -1.5px;
+
+  --abr-h2-size: 32px;
+  --abr-h2-weight: 400;
+  --abr-h2-lh: 1.2;     /* @kind other */
+  --abr-h2-ls: -0.5px;
+
+  --abr-h3-size: 28px;
+  --abr-h3-weight: 500;
+  --abr-h3-lh: 1.2;     /* @kind other */
+
+  --abr-h4-size: 20px;
+  --abr-h4-weight: 400;
+  --abr-h4-lh: 1;       /* @kind other */
+  --abr-h4-ls: 0.25px;
+
+  --abr-h5-size: 18px;
+  --abr-h5-weight: 400;
+  --abr-h5-lh: 1.33;    /* @kind other */
+  --abr-h5-ls: 0.15px;
+
+  --abr-h6-size: 16px;
+  --abr-h6-weight: 600;
+  --abr-h6-lh: 1;       /* @kind other */
+  --abr-h6-ls: 0.15px;
+
+  /* ── Body & supporting (Roboto) ─────────────────────────── */
+  --abr-subtitle1-size: 14px;
+  --abr-subtitle1-weight: 500;
+  --abr-subtitle2-size: 13px;
+  --abr-subtitle2-weight: 500;
+
+  --abr-body1-size: 14px;
+  --abr-body1-weight: 400;
+  --abr-body1-lh: 1.4;  /* @kind other */
+  --abr-body1-ls: 0.15px;
+
+  --abr-body2-size: 13px;
+  --abr-body2-weight: 400;
+  --abr-body2-lh: 1.23; /* @kind other */
+  --abr-body2-ls: 0.17px;
+
+  --abr-caption-size: 11px;
+  --abr-caption-weight: 400;
+  --abr-caption-ls: 0.4px;
+
+  --abr-overline-size: 11px;
+  --abr-overline-weight: 400;
+  --abr-overline-ls: 1px;
+  --abr-overline-lh: 2.66;  /* @kind other */
+}
+
+/* ── Heading utility classes (optional, mirror MUI variants) ── */
+.abr-h1 { font-family: var(--abr-font-heading); font-size: var(--abr-h1-size); font-weight: var(--abr-h1-weight); line-height: var(--abr-h1-lh); letter-spacing: var(--abr-h1-ls); color: var(--abr-text-body); margin: 0; }
+.abr-h2 { font-family: var(--abr-font-heading); font-size: var(--abr-h2-size); font-weight: var(--abr-h2-weight); line-height: var(--abr-h2-lh); letter-spacing: var(--abr-h2-ls); color: var(--abr-text-body); margin: 0; }
+.abr-h3 { font-family: var(--abr-font-heading); font-size: var(--abr-h3-size); font-weight: var(--abr-h3-weight); line-height: var(--abr-h3-lh); color: var(--abr-text-body); margin: 0; }
+.abr-h4 { font-family: var(--abr-font-heading); font-size: var(--abr-h4-size); font-weight: var(--abr-h4-weight); line-height: var(--abr-h4-lh); letter-spacing: var(--abr-h4-ls); color: var(--abr-text-body); margin: 0; }
+.abr-h5 { font-family: var(--abr-font-heading); font-size: var(--abr-h5-size); font-weight: var(--abr-h5-weight); line-height: var(--abr-h5-lh); letter-spacing: var(--abr-h5-ls); color: var(--abr-text-body); margin: 0; }
+.abr-h6 { font-family: var(--abr-font-heading); font-size: var(--abr-h6-size); font-weight: var(--abr-h6-weight); line-height: var(--abr-h6-lh); letter-spacing: var(--abr-h6-ls); color: var(--abr-text-body); margin: 0; }
+.abr-subtitle1 { font-family: var(--abr-font-body); font-size: var(--abr-subtitle1-size); font-weight: var(--abr-subtitle1-weight); color: var(--abr-text-body); }
+.abr-subtitle2 { font-family: var(--abr-font-body); font-size: var(--abr-subtitle2-size); font-weight: var(--abr-subtitle2-weight); color: var(--abr-text-body); }
+.abr-body1 { font-family: var(--abr-font-body); font-size: var(--abr-body1-size); font-weight: var(--abr-body1-weight); line-height: var(--abr-body1-lh); letter-spacing: var(--abr-body1-ls); color: var(--abr-text-body); }
+.abr-body2 { font-family: var(--abr-font-body); font-size: var(--abr-body2-size); font-weight: var(--abr-body2-weight); line-height: var(--abr-body2-lh); letter-spacing: var(--abr-body2-ls); color: var(--abr-text-body); }
+.abr-caption { font-family: var(--abr-font-body); font-size: var(--abr-caption-size); font-weight: var(--abr-caption-weight); letter-spacing: var(--abr-caption-ls); color: var(--abr-text-muted); }
+.abr-overline { font-family: var(--abr-font-body); font-size: var(--abr-overline-size); font-weight: var(--abr-overline-weight); letter-spacing: var(--abr-overline-ls); line-height: var(--abr-overline-lh); text-transform: uppercase; color: var(--abr-text-muted); }

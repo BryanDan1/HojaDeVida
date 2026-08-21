@@ -1,0 +1,44 @@
+/* SINCO ABR — Spacing, radii & elevation tokens
+   Base spacing unit is 4px (MUI spacing: 4 → theme.spacing(1) = 4px).
+   Elevations are the blue-tinted shadow set (rgba(24,39,75,…)). */
+:root {
+  /* ── Spacing scale (4px base) ───────────────────────────── */
+  --abr-space-0: 0;
+  --abr-space-1: 4px;   /* spacing(1) */
+  --abr-space-2: 8px;   /* spacing(2) */
+  --abr-space-3: 12px;  /* spacing(3) */
+  --abr-space-4: 16px;  /* spacing(4) */
+  --abr-space-5: 20px;  /* spacing(5) */
+  --abr-space-6: 24px;  /* spacing(6) */
+  --abr-space-8: 32px;
+  --abr-space-10: 40px;
+
+  /* ── Radii ──────────────────────────────────────────────── */
+  --abr-radius-input: 0.375rem;  /* 6px — inputs / buttons */
+  --abr-radius-card: 10px;       /* cards, accordion group ends, report tables */
+  --abr-radius-pill: 999px;
+  --abr-radius-scroll: 10px;     /* scrollbar thumb/track */
+
+  /* ── Layout ─────────────────────────────────────────────── */
+  --abr-menu-width: 250px;       /* permanent drawer expanded */
+  --abr-menu-width-collapsed: 57px;
+  --abr-content-width: 1020px;   /* centred content column */
+  --abr-footer-height: 56px;     /* fixed FooterActions bar */
+
+  /* ── Focus ──────────────────────────────────────────────── */
+  --abr-focus-shadow: 0 0 0 3px var(--abr-focus-ring);
+
+  /* ── Elevation · blue-tinted shadow set ─────────────────── */
+  --abr-elevation-0: none;
+  --abr-elevation-1: 0px 1px 3px rgba(24, 39, 75, 0.12), 0px 1px 1px -1px rgba(24, 39, 75, 0.14), 0px 2px 1px -2px rgba(24, 39, 75, 0.2);
+  --abr-elevation-2: 0px 1px 5px rgba(24, 39, 75, 0.12), 0px 2px 2px rgba(24, 39, 75, 0.14), 0px 3px 1px -2px rgba(24, 39, 75, 0.2);
+  --abr-elevation-3: 0px 1px 8px rgba(24, 39, 75, 0.12), 0px 3px 4px rgba(24, 39, 75, 0.14), 0px 3px 3px -2px rgba(24, 39, 75, 0.2);
+  --abr-elevation-4: 0px 2px 4px -1px rgba(24, 39, 75, 0.2), 0px 4px 5px rgba(24, 39, 75, 0.14), 0px 1px 10px rgba(24, 39, 75, 0.12);
+  --abr-elevation-6: 0px 3px 5px -1px rgba(24, 39, 75, 0.2), 0px 6px 10px rgba(24, 39, 75, 0.14), 0px 1px 18px rgba(24, 39, 75, 0.12);
+  --abr-elevation-8: 0px 5px 5px -3px rgba(24, 39, 75, 0.2), 0px 8px 10px 1px rgba(24, 39, 75, 0.14), 0px 3px 14px 2px rgba(24, 39, 75, 0.12);
+  --abr-elevation-16: 0px 8px 10px -5px rgba(24, 39, 75, 0.2), 0px 16px 24px 2px rgba(24, 39, 75, 0.14), 0px 6px 30px 5px rgba(24, 39, 75, 0.12);
+  --abr-elevation-24: 0px 11px 15px -7px rgba(24, 39, 75, 0.2), 0px 24px 38px 3px rgba(24, 39, 75, 0.14), 0px 9px 46px 8px rgba(24, 39, 75, 0.12);
+
+  /* alias: the card shadow used on Tarjetas / hover cards */
+  --abr-shadow-card: var(--abr-elevation-1);
+}

@@ -1,0 +1,88 @@
+/* SINCO ABR — Color tokens
+   Mirrors the MUI theme palette (TemaBase.ts) extending SincoTheme.
+   Base scale values first, semantic aliases second. */
+:root {
+  /* ── Primary · corporate blue ───────────────────────────── */
+  --abr-primary-main: #1e62a1;
+  --abr-primary-light: #5a8fd3;
+  --abr-primary-dark: #003972;
+  --abr-primary-contrast: #ffffff;
+  /* derived tint used for selected nav items (primary[50]) */
+  --abr-primary-50: #e9f1f8;
+
+  /* ── Secondary · cyan ───────────────────────────────────── */
+  --abr-secondary-main: #0cbbe2;
+  --abr-secondary-light: #67eeff;
+  --abr-secondary-dark: #008bb0;
+  --abr-secondary-contrast: #ffffff;
+
+  /* ── Brand · SINCO terracotta (logo + legacy focus) ─────── */
+  --abr-brand-terracotta: #c76949;
+  --abr-brand-terracotta-soft: rgba(199, 104, 73, 0.82);
+
+  /* ── Semantic states ────────────────────────────────────── */
+  --abr-error-main: #d14343;
+  --abr-error-light: #d85f5f;
+  --abr-error-dark: #b51e1e;
+  --abr-warning-main: #fb8500;
+  --abr-warning-light: #fc9726;
+  --abr-warning-dark: #f85500;
+  --abr-info-main: #2d9fc5;
+  --abr-info-light: #4dadce;
+  --abr-info-dark: #1172a3;
+  --abr-success-main: #8fc93a;
+  --abr-success-light: #a0d158;
+  --abr-success-dark: #60a918;
+
+  /* ── Neutral grey scale (Sinco corporate) ───────────────── */
+  --abr-grey-50: #fafbff;
+  --abr-grey-100: #f4f6fa;
+  --abr-grey-200: #edeff5;
+  --abr-grey-300: #e6e8f0;
+  --abr-grey-400: #d8dae5;
+  --abr-grey-500: #c1c4d6;
+  --abr-grey-600: #8f95b2;
+  --abr-grey-700: #696f8c;
+  --abr-grey-800: #474d66;
+  --abr-grey-900: #101840;
+
+  /* ── Text ───────────────────────────────────────────────── */
+  --abr-text-primary: rgba(16, 24, 64, 0.87);
+  --abr-text-secondary: rgba(16, 24, 64, 0.6);
+  --abr-text-disabled: rgba(16, 24, 64, 0.38);
+
+  /* ── Action overlays (carbon #101840 base) ──────────────── */
+  --abr-action-active: rgba(16, 24, 64, 0.54);
+  --abr-action-hover: rgba(16, 24, 64, 0.04);
+  --abr-action-selected: rgba(16, 24, 64, 0.08);
+  --abr-action-disabled: rgba(16, 24, 64, 0.26);
+  --abr-action-disabled-bg: rgba(16, 24, 64, 0.12);
+  --abr-action-focus: rgba(16, 24, 64, 0.12);
+
+  /* ── Surfaces ───────────────────────────────────────────── */
+  --abr-bg-default: #f5f5f5;
+  --abr-bg-paper: #ffffff;
+  --abr-divider: rgba(16, 24, 64, 0.12);
+
+  /* ── Ad-hoc tokens used across screens (not in theme) ───── */
+  --abr-table-header: #e4ecf4;   /* sticky table / group headers */
+  --abr-table-border: #969faf;   /* report table border */
+  --abr-table-text: #757575;     /* report table text */
+  --abr-input-border: #ced4da;   /* legacy input border */
+  --abr-input-border-error: #dc3545;
+  --abr-validation-warning: #d98c00;
+  --abr-scrollbar-thumb: #8b8b8b;
+  --abr-scrollbar-track: #f5f5f5;
+  --abr-outline: rgba(16, 24, 64, 0.23); /* notched outline */
+
+  /* ── Semantic aliases ───────────────────────────────────── */
+  --abr-surface-app: var(--abr-bg-default);
+  --abr-surface-card: var(--abr-bg-paper);
+  --abr-surface-sunken: var(--abr-grey-100);
+  --abr-text-body: var(--abr-text-primary);
+  --abr-text-muted: var(--abr-text-secondary);
+  --abr-border-subtle: var(--abr-divider);
+  --abr-border-input: var(--abr-input-border);
+  --abr-accent: var(--abr-primary-main);
+  --abr-focus-ring: rgba(30, 98, 161, 0.62); /* primary @ ~0.62 */
+}
