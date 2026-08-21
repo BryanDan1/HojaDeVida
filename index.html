@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/sinco-abr-design-system-4925c994-ec4e-4faf-b7ae-15750f541f11/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/sinco-abr-design-system-4925c994-ec4e-4faf-b7ae-15750f541f11/tokens/colors.css">
+<link rel="stylesheet" href="_ds/sinco-abr-design-system-4925c994-ec4e-4faf-b7ae-15750f541f11/tokens/typography.css">
+<link rel="stylesheet" href="_ds/sinco-abr-design-system-4925c994-ec4e-4faf-b7ae-15750f541f11/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/sinco-abr-design-system-4925c994-ec4e-4faf-b7ae-15750f541f11/tokens/base.css">
+<link rel="stylesheet" href="_ds/sinco-abr-design-system-4925c994-ec4e-4faf-b7ae-15750f541f11/styles.css">
+<script src="_ds/sinco-abr-design-system-4925c994-ec4e-4faf-b7ae-15750f541f11/_ds_bundle.js"></script>
+<style>
+body{margin:0;background:#f5f5f5}
+a{color:#1e62a1;text-decoration:none}
+*{user-select:text}
+a:hover{color:#003972;text-decoration:underline}
+ul{margin:0;padding:0;list-style:none}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#f5f5f5;font-family:Roboto,sans-serif;color:rgba(16,24,64,0.87)">
+
+  <nav style="position:sticky;top:0;z-index:100;background:#ffffff;box-shadow:0 1px 3px rgba(24,39,75,0.12);display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:57px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <span style="font-family:Nunito,sans-serif;font-size:14px;font-weight:700;letter-spacing:1.4px;color:#101840">HOJA DE VIDA</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:24px;font-size:13px">
+      <a href="#perfil" style="color:rgba(16,24,64,0.6)">Perfil</a>
+      <a href="#experiencia" style="color:rgba(16,24,64,0.6)">Experiencia</a>
+      <a href="#campo" style="color:rgba(16,24,64,0.6)">En campo</a>
+      <a href="#educacion" style="color:rgba(16,24,64,0.6)">Educación</a>
+      <a href="#habilidades" style="color:rgba(16,24,64,0.6)">Habilidades</a>
+      <a href="mailto:brayandan_melo@hotmail.com" onClick="{{ contactar }}" style="background:#1e62a1;color:#fff;padding:8px 16px;border-radius:6px;font-weight:500;cursor:pointer" style-hover="background:#003972;color:#fff">Contactar</a>
+      <sc-if value="{{ copiado }}"><span style="position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#101840;color:#fff;font-size:13px;padding:10px 16px;border-radius:6px;box-shadow:0 4px 12px rgba(24,39,75,0.25);z-index:200">Copiado: {{ copiado }}</span></sc-if>
+    </div>
+  </nav>
+
+  <header style="position:relative;background:#003972;color:#ffffff;padding:56px 32px;overflow:hidden">
+    <img src="uploads/WhatsApp%20Image%202026-08-20%20at%208.44.43%20PM%20(1).jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:100% 58%;filter:contrast(1.04) brightness(1.04)">
+    <div style="position:absolute;inset:0;background:linear-gradient(95deg,rgba(0,32,66,0.88) 0%,rgba(0,38,78,0.74) 32%,rgba(0,45,92,0.48) 58%,rgba(0,57,114,0.2) 82%,rgba(0,57,114,0.1) 100%)"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg, rgba(0,32,66,0.4) 0%, rgba(0,32,66,0) 50%)"></div>
+    <div style="position:relative;max-width:1020px;margin:0 auto;display:flex;flex-direction:column;gap:28px">
+      <div style="max-width:600px;display:flex;flex-direction:column;gap:16px">
+        <h1 style="margin:0;font-family:Nunito,sans-serif;font-size:46px;font-weight:300;line-height:1.05;letter-spacing:.5px">Bryan Daniel<br><span style="font-weight:700">Melo Guzmán</span></h1>
+        <div style="font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.95);line-height:1.7;max-width:560px;text-shadow:0 1px 6px rgba(0,29,58,0.7)">Ingeniero electrónico · Senior Field Service Engineer · Technical Trainer · Soporte técnico subregional</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+          <a href="tel:3136829762" onClick="{{ copiarTel }}" title="Clic para copiar" style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:6px;padding:9px 14px;font-size:13px;color:#ffffff;white-space:nowrap;cursor:pointer;user-select:text" style-hover="background:rgba(255,255,255,0.16);color:#ffffff">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#67eeff" stroke-width="1.7"><path d="M6.6 3h3l1.5 4.2-2.1 1.5a12 12 0 0 0 6.3 6.3l1.5-2.1L21 14.4v3A2.6 2.6 0 0 1 18.4 20A16.4 16.4 0 0 1 4 5.6A2.6 2.6 0 0 1 6.6 3z"/></svg>
+            313 682 9762
+          </a>
+          <a href="mailto:brayandan_melo@hotmail.com" onClick="{{ copiarMail }}" title="Clic para copiar" style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:6px;padding:9px 14px;font-size:13px;color:#ffffff;cursor:pointer;user-select:text" style-hover="background:rgba(255,255,255,0.16);color:#ffffff">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#67eeff" stroke-width="1.7"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="M3 6l9 6.5L21 6"/></svg>
+            brayandan_melo@hotmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/bryan-daniel-melo-guzm%C3%A1n-097ab51a9/" target="_blank" style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:6px;padding:9px 14px;font-size:13px;color:#ffffff" style-hover="background:rgba(255,255,255,0.16);color:#ffffff">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#67eeff" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7.2v.1M11.5 17v-4a2.5 2.5 0 0 1 5 0v4"/></svg>
+            LinkedIn
+          </a>
+          <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:6px;padding:9px 14px;font-size:13px;color:#ffffff;white-space:nowrap">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#67eeff" stroke-width="1.7"><path d="M12 21s7-6.4 7-11.2A7 7 0 0 0 5 9.8C5 14.6 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.5"/></svg>
+            Madrid, Cundinamarca
+          </div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(180px,1fr));gap:12px;max-width:600px">
+        <div style="background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.22);border-radius:10px;padding:16px">
+          <div style="font-family:Nunito,sans-serif;font-size:30px;font-weight:700;color:#ffffff;line-height:1">+7</div>
+          <div style="font-size:11.5px;color:rgba(255,255,255,0.88);margin-top:4px;line-height:1.4">años en ingeniería de servicio</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.22);border-radius:10px;padding:16px">
+          <div style="font-family:Nunito,sans-serif;font-size:30px;font-weight:700;color:#ffffff;line-height:1">4</div>
+          <div style="font-size:11.5px;color:rgba(255,255,255,0.88);margin-top:4px;line-height:1.4">empresas del sector salud e industria</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.22);border-radius:10px;padding:16px">
+          <div style="font-family:Nunito,sans-serif;font-size:30px;font-weight:700;color:#ffffff;line-height:1">2</div>
+          <div style="font-size:11.5px;color:rgba(255,255,255,0.88);margin-top:4px;line-height:1.4">subregiones atendidas: Norte de Suramérica y Caribe</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.22);border-radius:10px;padding:16px">
+          <div style="font-family:Nunito,sans-serif;font-size:30px;font-weight:700;color:#ffffff;line-height:1">A2</div>
+          <div style="font-size:11.5px;color:rgba(255,255,255,0.88);margin-top:4px;line-height:1.4">nivel de inglés</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main style="max-width:1020px;margin:0 auto;padding:40px 32px 64px;display:flex;flex-direction:column;gap:40px">
+
+    <section id="perfil" style="background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(24,39,75,0.12);padding:32px;display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <h2 style="margin:0;font-family:Nunito,sans-serif;font-size:13px;font-weight:700;letter-spacing:2.4px;color:#1e62a1">PERFIL</h2>
+        <div style="height:2px;width:40px;background:#0cbbe2"></div>
+      </div>
+      <p style="margin:0;font-size:15px;line-height:1.7;text-wrap:pretty;color:rgba(16,24,64,0.8)">Ingeniero Electrónico y Tecnólogo en Mantenimiento de Equipos Biomédicos con más de 7 años de experiencia en ingeniería de servicio, soporte técnico especializado y mantenimiento de equipos médicos y sistemas de detección de gases, fuego y protección respiratoria. Experto en configuración, instalación, puesta en marcha y mantenimiento de equipos críticos, así como en capacitación técnica, implementación de proyectos y soporte técnico regional. Orientado a la mejora continua, la confiabilidad operativa y la automatización industrial.</p>
+    </section>
+
+    <section id="experiencia" style="display:flex;flex-direction:column;gap:20px">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <h2 style="margin:0;font-family:Nunito,sans-serif;font-size:13px;font-weight:700;letter-spacing:2.4px;color:#1e62a1">EXPERIENCIA LABORAL</h2>
+        <div style="height:2px;width:40px;background:#0cbbe2"></div>
+      </div>
+
+      <article style="background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(24,39,75,0.12);padding:28px;display:flex;flex-direction:column;gap:14px;border-top:3px solid #1e62a1">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap">
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <div style="font-family:Nunito,sans-serif;font-size:20px;font-weight:700;color:#101840">Field Service Engineer Senior</div>
+            <div style="font-size:14px;color:#1e62a1;font-weight:500">Dräger Colombia</div>
+          </div>
+          <div style="font-size:11.5px;font-weight:600;letter-spacing:.8px;color:#ffffff;background:#1e62a1;border-radius:999px;padding:5px 12px;white-space:nowrap">NOV 2017 — ACTUAL</div>
+        </div>
+        <ul style="display:flex;flex-direction:column;gap:9px;font-size:14px;line-height:1.6;color:rgba(16,24,64,0.75)">
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Mantenimiento preventivo y correctivo del portafolio Dräger Safety: protección respiratoria, detección portátil y fija de gases, alcoholimetría, rescate y equipos de escape.</span></li>
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Configuración, instalación, puesta en marcha y calibración de equipos, garantizando su óptimo desempeño y el cumplimiento de estándares de calidad y seguridad.</span></li>
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Capacitación técnica a clientes, distribuidores y usuarios finales sobre operación, mantenimiento y mejores prácticas de los equipos.</span></li>
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Elaboración de cotizaciones y gestión del servicio postventa, asegurando una atención oportuna y orientada al cliente.</span></li>
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Soporte técnico especializado en proyectos a nivel nacional y subregional (Norte de Suramérica y el Caribe), acompañando la implementación y la resolución de incidencias.</span></li>
+        </ul>
+      </article>
+
+      <article style="background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(24,39,75,0.12);padding:28px;display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap">
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <div style="font-family:Nunito,sans-serif;font-size:18px;font-weight:700;color:#101840">Técnico Biomédico</div>
+            <div style="font-size:14px;color:#1e62a1;font-weight:500">Colsubsidio</div>
+          </div>
+          <div style="font-size:11.5px;font-weight:600;letter-spacing:.8px;color:rgba(16,24,64,0.6);background:#f4f6fa;border-radius:999px;padding:5px 12px;white-space:nowrap">2016 — 2017</div>
+        </div>
+        <ul style="display:flex;flex-direction:column;gap:9px;font-size:14px;line-height:1.6;color:rgba(16,24,64,0.75)">
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Mantenimiento preventivo y correctivo de equipos biomédicos en diferentes servicios hospitalarios.</span></li>
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Elaboración de hojas de vida de los equipos y ejecución de rutinas diarias de verificación.</span></li>
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Soporte técnico en UCI neonatal, cuidado intermedio y básico neonatal, cirugía, UCI adulto, hospitalización y central de esterilización.</span></li>
+        </ul>
+      </article>
+
+      <article style="background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(24,39,75,0.12);padding:28px;display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap">
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <div style="font-family:Nunito,sans-serif;font-size:18px;font-weight:700;color:#101840">Técnico Biomédico</div>
+            <div style="font-size:14px;color:#1e62a1;font-weight:500">E.S.E. Hospital San Rafael — Facatativá</div>
+          </div>
+          <div style="font-size:11.5px;font-weight:600;letter-spacing:.8px;color:rgba(16,24,64,0.6);background:#f4f6fa;border-radius:999px;padding:5px 12px;white-space:nowrap">2015 — 2016</div>
+        </div>
+        <ul style="display:flex;flex-direction:column;gap:9px;font-size:14px;line-height:1.6;color:rgba(16,24,64,0.75)">
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Mantenimiento preventivo y correctivo de equipos biomédicos, garantizando su disponibilidad y correcto funcionamiento.</span></li>
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Soporte técnico en áreas críticas: UCI adulto y neonatal, cirugía, urgencias, hospitalización, pediatría y salas de parto.</span></li>
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Rutinas de verificación, inspección y control para asegurar el cumplimiento de estándares de calidad y seguridad.</span></li>
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Apoyo al programa de tecnovigilancia, contribuyendo al seguimiento, control y gestión de equipos médicos.</span></li>
+        </ul>
+      </article>
+
+      <article style="background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(24,39,75,0.12);padding:28px;display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap">
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <div style="font-family:Nunito,sans-serif;font-size:18px;font-weight:700;color:#101840">Técnico Biomédico</div>
+            <div style="font-size:14px;color:#1e62a1;font-weight:500">B. Braun Group</div>
+          </div>
+          <div style="font-size:11.5px;font-weight:600;letter-spacing:.8px;color:rgba(16,24,64,0.6);background:#f4f6fa;border-radius:999px;padding:5px 12px;white-space:nowrap">2013 — 2014</div>
+        </div>
+        <ul style="display:flex;flex-direction:column;gap:9px;font-size:14px;line-height:1.6;color:rgba(16,24,64,0.75)">
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Mantenimiento preventivo y correctivo de bombas de infusión, bombas de perfusión y sus accesorios, garantizando seguridad y disponibilidad para la atención clínica.</span></li>
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Diagnóstico y solución de fallas técnicas mediante pruebas funcionales, inspecciones y ajustes conforme a las especificaciones del fabricante.</span></li>
+          <li style="display:flex;gap:10px"><span style="color:#0cbbe2;font-weight:700">›</span><span>Elaboración de reportes técnicos y documentación de las actividades de mantenimiento, cumpliendo estándares de calidad y protocolos institucionales.</span></li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="campo" style="display:flex;flex-direction:column;gap:20px">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <h2 style="margin:0;font-family:Nunito,sans-serif;font-size:13px;font-weight:700;letter-spacing:2.4px;color:#1e62a1">TRABAJO EN CAMPO</h2>
+        <div style="height:2px;width:40px;background:#0cbbe2"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+        <figure style="margin:0;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(24,39,75,0.12);overflow:hidden;display:flex;flex-direction:column">
+          <img src="uploads/WhatsApp%20Image%202026-08-20%20at%208.44.42%20PM.jpeg" alt="Revisión de tarjeta de control en tablero de campo" style="width:100%;height:300px;object-fit:cover;display:block">
+        </figure>
+        <figure style="margin:0;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(24,39,75,0.12);overflow:hidden;display:flex;flex-direction:column">
+          <img src="uploads/WhatsApp%20Image%202026-08-20%20at%208.44.43%20PM.jpeg" alt="Calibración de detectores de gas en cuarto de bombas" style="width:100%;height:300px;object-fit:cover;display:block">
+        </figure>
+      </div>
+    </section>
+
+    <section id="educacion" style="display:flex;flex-direction:column;gap:20px">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <h2 style="margin:0;font-family:Nunito,sans-serif;font-size:13px;font-weight:700;letter-spacing:2.4px;color:#1e62a1">EDUCACIÓN</h2>
+        <div style="height:2px;width:40px;background:#0cbbe2"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+        <div style="background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(24,39,75,0.12);padding:22px;display:flex;flex-direction:column;gap:6px">
+          <div style="font-size:11.5px;letter-spacing:1px;color:#0cbbe2;font-weight:600">2025 — 2026</div>
+          <div style="font-family:Nunito,sans-serif;font-size:16px;font-weight:700;color:#101840;line-height:1.35">Especialización en Informática y Automática Industrial</div>
+          <div style="font-size:13px;color:rgba(16,24,64,0.6);line-height:1.5">Universidad Distrital Francisco José de Caldas</div>
+        </div>
+        <div style="background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(24,39,75,0.12);padding:22px;display:flex;flex-direction:column;gap:6px">
+          <div style="font-size:11.5px;letter-spacing:1px;color:#0cbbe2;font-weight:600">2016 — 2023</div>
+          <div style="font-family:Nunito,sans-serif;font-size:16px;font-weight:700;color:#101840;line-height:1.35">Ingeniería Electrónica</div>
+          <div style="font-size:13px;color:rgba(16,24,64,0.6);line-height:1.5">Universidad ECCI</div>
+        </div>
+        <div style="background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(24,39,75,0.12);padding:22px;display:flex;flex-direction:column;gap:6px">
+          <div style="font-size:11.5px;letter-spacing:1px;color:#0cbbe2;font-weight:600">2012 — 2018</div>
+          <div style="font-family:Nunito,sans-serif;font-size:16px;font-weight:700;color:#101840;line-height:1.35">Ingeniería Eléctrica y Electrónica · Tecnología en Electrónica</div>
+          <div style="font-size:13px;color:rgba(16,24,64,0.6);line-height:1.5">UNIMINUTO</div>
+        </div>
+        <div style="background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(24,39,75,0.12);padding:22px;display:flex;flex-direction:column;gap:6px">
+          <div style="font-size:11.5px;letter-spacing:1px;color:#0cbbe2;font-weight:600">2012 — 2014</div>
+          <div style="font-family:Nunito,sans-serif;font-size:16px;font-weight:700;color:#101840;line-height:1.35">Tecnólogo en Mantenimiento de Equipos Biomédicos</div>
+          <div style="font-size:13px;color:rgba(16,24,64,0.6);line-height:1.5">SENA</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" style="background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(24,39,75,0.12);padding:32px;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <h2 style="margin:0;font-family:Nunito,sans-serif;font-size:13px;font-weight:700;letter-spacing:2.4px;color:#1e62a1">HABILIDADES E IDIOMAS</h2>
+        <div style="height:2px;width:40px;background:#0cbbe2"></div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <span style="background:#e9f1f8;color:#1e62a1;border-radius:999px;padding:7px 14px;font-size:13px">Field Service Engineering</span>
+        <span style="background:#e9f1f8;color:#1e62a1;border-radius:999px;padding:7px 14px;font-size:13px">Automatización industrial</span>
+        <span style="background:#e9f1f8;color:#1e62a1;border-radius:999px;padding:7px 14px;font-size:13px">Detección de gases</span>
+        <span style="background:#e9f1f8;color:#1e62a1;border-radius:999px;padding:7px 14px;font-size:13px">Sistemas de detección de incendio y gas (FGDS)</span>
+        <span style="background:#e9f1f8;color:#1e62a1;border-radius:999px;padding:7px 14px;font-size:13px">Implementación de proyectos</span>
+        <span style="background:#e9f1f8;color:#1e62a1;border-radius:999px;padding:7px 14px;font-size:13px">Servicio postventa</span>
+        <span style="background:#e9f1f8;color:#1e62a1;border-radius:999px;padding:7px 14px;font-size:13px">Análisis y resolución de problemas</span>
+        <span style="background:#e9f1f8;color:#1e62a1;border-radius:999px;padding:7px 14px;font-size:13px">Liderazgo técnico</span>
+        <span style="background:#e9f1f8;color:#1e62a1;border-radius:999px;padding:7px 14px;font-size:13px">Integración de sistemas con PLC</span>
+        <span style="background:#e9f1f8;color:#1e62a1;border-radius:999px;padding:7px 14px;font-size:13px">Calibración de equipos</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;border-top:1px solid rgba(16,24,64,0.12);padding-top:16px">
+        <span style="font-size:14px;font-weight:500;color:#101840">Inglés</span>
+        <span style="background:#8fc93a;color:#ffffff;border-radius:999px;padding:4px 10px;font-size:11.5px;font-weight:600;letter-spacing:.6px">A2 · BÁSICO</span>
+      </div>
+    </section>
+  </main>
+
+  <footer style="background:#101840;color:rgba(255,255,255,0.6);padding:28px 32px">
+    <div style="max-width:1020px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:12.5px">
+      <span>Bryan Daniel Melo Guzmán · Ingeniero Electrónico</span>
+      <div style="display:flex;gap:20px">
+        <a href="mailto:brayandan_melo@hotmail.com" style="color:#67eeff">brayandan_melo@hotmail.com</a>
+        <a href="tel:3136829762" style="color:#67eeff">313 682 9762</a>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">class Component extends DCLogic {
+  state = { copiado: null };
+  copiar(texto) {
+    let ok = false;
+    const ta = document.createElement('textarea');
+    ta.value = texto;
+    ta.setAttribute('readonly', '');
+    ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    ta.setSelectionRange(0, texto.length);
+    try { ok = document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(ta);
+    if (!ok && navigator.clipboard) {
+      navigator.clipboard.writeText(texto).catch(() => {});
+    }
+    this.setState({ copiado: texto });
+    clearTimeout(this._t);
+    this._t = setTimeout(() => this.setState({ copiado: null }), 2600);
+  }
+  renderVals() {
+    const mail = 'brayandan_melo@hotmail.com';
+    const tel = '313 682 9762';
+    return {
+      copiado: this.state.copiado,
+      contactar: (e) => {
+        e.preventDefault();
+        try { window.open('mailto:' + mail, '_blank'); } catch (err) {}
+        this.copiar(mail);
+      },
+      copiarMail: (e) => { e.preventDefault(); this.copiar(mail); },
+      copiarTel: (e) => { e.preventDefault(); this.copiar(tel); },
+    };
+  }
+}</script>
+</body>
+</html>
