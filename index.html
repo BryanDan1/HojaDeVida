@@ -21,6 +21,21 @@ a{color:#1e62a1;text-decoration:none}
 *{user-select:text}
 a:hover{color:#003972;text-decoration:underline}
 ul{margin:0;padding:0;list-style:none}
+@media (max-width:767px){
+nav{padding:0 14px!important}
+nav>div:last-child{gap:8px!important}
+nav>div:last-child a[href^="#"]{display:none!important}
+nav a[download]{font-size:12px!important;padding:6px 10px!important}
+nav a[href^="mailto"]{font-size:12px!important;padding:7px 10px!important}
+header{padding:40px 20px 36px!important}
+header h1{font-size:33px!important}
+header div[style*="grid-template-columns"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;max-width:100%!important}
+header div[style*="grid-template-columns"]>div>div:first-child{font-size:24px!important}
+main{padding:28px 16px 48px!important;gap:28px!important}
+#perfil,#habilidades,main article{padding:20px!important}
+footer{padding:24px 20px!important}
+footer>div{flex-direction:column!important;align-items:flex-start!important}
+}
 </style>
 </helmet>
 
